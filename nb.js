@@ -47,16 +47,16 @@ function setLabelProbabilities () {
 };
 
 function setChordCountsInLabels () {
-  songs.forEach(function (i) {
-    if (chordCountsInLabels[i[0]] === undefined) {
-      chordCountsInLabels[i[0]] = {};
+  songs.forEach(function (song) {
+    if (chordCountsInLabels[song[0]] === undefined) {
+      chordCountsInLabels[song[0]] = {};
     }
-    i[1].forEach(function (j) {
-      if (chordCountsInLabels[i[0]][j] > 0) {
-        chordCountsInLabels[i[0]][j] =
-chordCountsInLabels[i[0]][j] + 1;
+    song[1].forEach(function (chord) {
+      if (chordCountsInLabels[song[0]][chord] > 0) {
+        chordCountsInLabels[song[0]][chord] =
+chordCountsInLabels[song[0]][chord] + 1;
       } else {
-        chordCountsInLabels[i[0]][j] = 1;
+        chordCountsInLabels[song[0]][chord] = 1;
       }
     });
   });
