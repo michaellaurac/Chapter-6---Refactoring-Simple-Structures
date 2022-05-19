@@ -10,7 +10,7 @@ const army = ['ab', 'ebm7', 'dbadd9', 'fm7', 'bbm', 'abmaj7', 'ebm'];
 const paperBag = ['bm7', 'e', 'c', 'g', 'b7', 'f', 'em', 'a', 'cmaj7', 'em7', 'a7', 'f7', 'b'];
 const toxic = ['cm', 'eb', 'g', 'cdim', 'eb7', 'd7', 'db7', 'ab', 'gmaj7', 'g7'];
 const bulletproof = ['d#m', 'g#', 'b', 'f#', 'g#m', 'c#'];
-const song_11 = [];
+const blankSong = [];
 
 const songs = [];
 const labels = [];
