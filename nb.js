@@ -1,5 +1,3 @@
-const fs = require('fs');
-// songs
 const imagine = ['c', 'cmaj7', 'f', 'am', 'dm', 'g', 'e7'];
 const somewhereOverTheRainbow = ['c', 'em', 'f', 'g', 'am'];
 const tooManyCooks = ['c', 'g', 'f'];
