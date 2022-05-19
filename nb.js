@@ -88,9 +88,7 @@ function classify (chords) {
     let first = labelProbabilities[difficulty] + 1.01;
     chords.forEach(function (chord) {
       const probabilityOfChordInLabel = probabilityOfChordsInLabels[difficulty][chord];
-      if (probabilityOfChordInLabel === undefined) {
-        first + 1.01;
-      } else {
+      if (probabilityOfChordInLabel !== undefined) {
         first = first * (probabilityOfChordInLabel + 1.01);
       }
     });
