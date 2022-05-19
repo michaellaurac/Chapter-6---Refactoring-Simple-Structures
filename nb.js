@@ -89,17 +89,17 @@ function classify (chords) {
   const total = labelProbabilities;
   console.log(total);
   const classified = {};
-  Object.keys(total).forEach(function (obj) {
-    let first = labelProbabilities[obj] + 1.01;
+  Object.keys(total).forEach(function (difficulty) {
+    let first = labelProbabilities[difficulty] + 1.01;
     chords.forEach(function (chord) {
-      const probabilityOfChordInLabel = probabilityOfChordsInLabels[obj][chord];
+      const probabilityOfChordInLabel = probabilityOfChordsInLabels[difficulty][chord];
       if (probabilityOfChordInLabel === undefined) {
         first + 1.01;
       } else {
         first = first * (probabilityOfChordInLabel + 1.01);
       }
     });
-    classified[obj] = first;
+    classified[difficulty] = first;
   });
   console.log(classified);
 };
