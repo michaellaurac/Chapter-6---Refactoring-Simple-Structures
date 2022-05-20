@@ -1,3 +1,7 @@
+const easy = 'easy';
+const medium = 'medium';
+const hard = 'hard';
+
 const imagine = ['c', 'cmaj7', 'f', 'am', 'dm', 'g', 'e7'];
 const somewhereOverTheRainbow = ['c', 'em', 'f', 'g', 'am'];
 const tooManyCooks = ['c', 'g', 'f'];
@@ -67,15 +71,15 @@ function setProbabilityOfChordsInLabels () {
   });
 }
 
-train(imagine, 'easy');
-train(somewhereOverTheRainbow, 'easy');
-train(tooManyCooks, 'easy');
-train(iWillFollowYouIntoTheDark, 'medium');
-train(babyOneMoreTime, 'medium');
-train(creep, 'medium');
-train(paperBag, 'hard');
-train(toxic, 'hard');
-train(bulletproof, 'hard');
+train(imagine, easy);
+train(somewhereOverTheRainbow, easy);
+train(tooManyCooks, easy);
+train(iWillFollowYouIntoTheDark, medium);
+train(babyOneMoreTime, medium);
+train(creep, medium);
+train(paperBag, hard);
+train(toxic, hard);
+train(bulletproof, hard);
 
 setLabelProbabilities();
 setChordCountsInLabels();
