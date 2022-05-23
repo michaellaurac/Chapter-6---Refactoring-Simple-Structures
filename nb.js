@@ -97,7 +97,8 @@ function classify (chords) {
 };
 
 function fileName () {
-  return 'nb.js';
+  const theError = new Error('here I am');
+  return theError.stack.split('\n')[1].split('\\').pop().split(':')[0];
 }
 console.log(`Welcome to ${fileName()}!`);
 
