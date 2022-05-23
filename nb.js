@@ -98,7 +98,7 @@ function classify (chords) {
 
 function fileName () {
   const theError = new Error('here I am');
-  return theError.stack.split('\n')[1].split('\\').pop().split(':')[0];
+  return /\\(\w+\.js):/.exec(theError.stack)[1];
 }
 console.log(`Welcome to ${fileName()}!`);
 
