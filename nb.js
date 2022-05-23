@@ -96,8 +96,10 @@ function classify (chords) {
   console.log(classified);
 };
 
-const fileName = 'nb.js';
-console.log(`Welcome to ${fileName}!`);
+function fileName () {
+  return 'nb.js';
+}
+console.log(`Welcome to ${fileName()}!`);
 
 classify(['d', 'g', 'e', 'dm']);
 classify(['f#m7', 'a', 'dadd9', 'dmaj7', 'bm', 'bm7', 'd', 'f#m']);
