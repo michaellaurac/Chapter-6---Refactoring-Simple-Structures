@@ -9,26 +9,31 @@ const imagine =                   ['c',
                                    'dm',
                                    'g',
                                    'e7'];
+
 const somewhereOverTheRainbow =   ['c',
                                    'em',
                                    'f',
                                    'g',
                                    'am'];
+
 const tooManyCooks =              ['c',
                                    'g',
                                    'f'];
+
 const iWillFollowYouIntoTheDark = ['f',
                                    'dm',
                                    'bb',
                                    'c',
                                    'a',
                                    'bbm'];
+
 const babyOneMoreTime =           ['cm',
                                    'g',
                                    'bb',
                                    'eb',
                                    'fm',
                                    'ab'];
+
 const creep =                     ['g',
                                    'gsus4',
                                    'b',
@@ -36,6 +41,7 @@ const creep =                     ['g',
                                    'c',
                                    'cmsus4',
                                    'cm6'];
+
 const paperBag =                  ['bm7',
                                    'e',
                                    'c',
@@ -49,6 +55,7 @@ const paperBag =                  ['bm7',
                                    'a7',
                                    'f7',
                                    'b'];
+
 const toxic =                     ['cm',
                                    'eb',
                                    'g',
@@ -59,6 +66,7 @@ const toxic =                     ['cm',
                                    'ab',
                                    'gmaj7',
                                    'g7'];
+                                   
 const bulletproof =               ['d#m',
                                    'g#',
                                    'b',
