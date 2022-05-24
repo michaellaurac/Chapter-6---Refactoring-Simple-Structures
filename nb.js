@@ -100,6 +100,9 @@ function fileName () {
   const theError = new Error('here I am');
   return /\\(\w+\.js):/.exec(theError.stack)[1];
 }
+
+const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
 console.log(`Welcome to ${fileName()}!`);
 
 classify(['d', 'g', 'e', 'dm']);
