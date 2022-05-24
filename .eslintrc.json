@@ -11,6 +11,7 @@
         "ecmaVersion": "latest"
     },
     "rules": {
-        "semi": ["error", "always"]
+        "semi": ["error", "always"],
+        "array-element-newline":["error", "always"];
     }
 }
