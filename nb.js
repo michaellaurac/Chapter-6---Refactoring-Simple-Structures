@@ -109,7 +109,7 @@ ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
 
 console.log(`Welcome to ${fileName()}!`);
 
-console.log(text);
-
 classify(['d', 'g', 'e', 'dm']);
 classify(['f#m7', 'a', 'dadd9', 'dmaj7', 'bm', 'bm7', 'd', 'f#m']);
+
+console.log(text);
