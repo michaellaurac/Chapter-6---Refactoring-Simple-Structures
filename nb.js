@@ -104,11 +104,11 @@ function train (chords, label) {
   songs.push([label,
     chords]);
   labels.push(label);
-  for (const chord of chords) {
+  chords.forEach(function (chord) {
     if (!allChords.includes(chord)) {
-      allChords.push(chords);
+      allChords.push(chord);
     }
-  }
+  });
   if (Object.keys(labelCounts).includes(label)) {
     labelCounts[label] = labelCounts[label] + 1;
   } else {
