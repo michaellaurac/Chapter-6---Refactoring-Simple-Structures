@@ -12,6 +12,6 @@
     },
     "rules": {
         "semi": ["error", "always"],
-        "array-element-newline":["error", "always"];
+        "array-element-newline":["error", "always"]
     }
 }
