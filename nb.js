@@ -100,17 +100,15 @@ const labelProbabilities = [];
 const chordCountsInLabels = {};
 let probabilityOfChordsInLabels = {};
 
-function checkAndInclude (chord) {
-  if (!allChords.includes(chord)) {
-    allChords.push(chord);
-  }
-};
-
 function train (chords, label) {
   songs.push([label,
     chords]);
   labels.push(label);
-  chords.forEach(checkAndInclude);
+  chords.forEach(chord => {
+    if (!allChords.includes(chord)) {
+      allChords.push(chord);
+    }
+  });
   if (Object.keys(labelCounts).includes(label)) {
     labelCounts[label] = labelCounts[label] + 1;
   } else {
