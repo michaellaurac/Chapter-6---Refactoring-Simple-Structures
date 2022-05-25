@@ -20,11 +20,7 @@ const somewhereOverTheRainbow = [
   'am'
 ];
 
-const tooManyCooks = [
-  'c',
-  'g',
-  'f'
-];
+const tooManyCooks = ['c', 'g', 'f'];
 
 const iWillFollowYouIntoTheDark = [
   'f',
@@ -101,8 +97,7 @@ const chordCountsInLabels = {};
 let probabilityOfChordsInLabels = {};
 
 function train (chords, label) {
-  songs.push([label,
-    chords]);
+  songs.push([label, chords]);
   labels.push(label);
   chords.forEach(chord => {
     if (!allChords.includes(chord)) {
@@ -209,3 +204,5 @@ classify([
 ]);
 
 console.log(text);
+
+console.log([2, 3, 4].map(element => element * 2));
